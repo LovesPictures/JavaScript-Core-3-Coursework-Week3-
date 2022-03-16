@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+The console.log on line 5 is withing the scope of the function f1 whist, the console.log on line 7 has global scope outside of the function and refers to line 1.
 
 ## Question 2
 
@@ -34,6 +35,10 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+console.log (x) - is 10, bod defined and within the scope of the function
+console.log(f1()) - is undefined, as it is outside of the function
+console.log (y) - its not declared in the function
 
 ## Question 3
 
@@ -62,3 +67,7 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+f1: references the declared parameter where the value of x, is 9
+f2: is an object passed by reference to function, so when function is
+called it can modify the original object, hence the 9 modified to 10
